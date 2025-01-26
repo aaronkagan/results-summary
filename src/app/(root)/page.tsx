@@ -14,7 +14,7 @@ export default function Home() {
   );
 
   return (
-    <div className="flex md:flex-row flex-col">
+    <div className="flex md:flex-row flex-col md:bg-white md:rounded-3xl">
       <div className="bg-gradient-to-t from-[#322dea] to-[#6843fe] flex flex-col items-center gap-5 md:rounded-3xl rounded-b-3xl md:flex-1 justify-center">
         <p className="text-[#c5baff] font-semibold mt-5">Your Result</p>
         <div className="rounded-[50%] bg-gradient-to-t from-[#4734ee] to-[#4c24cd] aspect-square flex justify-center items-center flex-col p-6">
