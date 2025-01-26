@@ -15,28 +15,28 @@ export default function Home() {
 
   return (
     <div className="flex md:flex-row flex-col">
-      <div className="bg-blue-500 flex flex-col items-center gap-5 rounded-3xl">
-        <p>Your Result</p>
-        <div className="rounded-[50%] bg-purple-500 aspect-square flex justify-center items-center flex-col">
-          <p className="text-white text-7xl font-bold">{score}</p>
+      <div className="bg-gradient-to-t from-[#322dea] to-[#6843fe] flex flex-col items-center gap-5 md:rounded-3xl rounded-b-3xl">
+        <p className="text-[#c5baff] font-semibold mt-5">Your Result</p>
+        <div className="rounded-[50%] bg-gradient-to-t from-[#4734ee] to-[#4c24cd] aspect-square flex justify-center items-center flex-col p-6">
+          <p className="text-white text-6xl font-bold">{score}</p>
           <p className="text-slate-400">of 100</p>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <p>Great</p>
-          <p className="max-w-[50%] text-center">
+          <p className="text-white font-semibold text-lg">Great</p>
+          <p className="max-w-[85%] text-center text-sm text-slate-300 mb-9">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
       </div>
-      <div className="p-4">
-        <p>Summary</p>
-        <div className="flex flex-col">
+      <div className="p-4 bg-[#fffffe]">
+        <p className="mb-4 font-bold">Summary</p>
+        <div className="flex flex-col gap-2">
           {data.map((tile) => (
             <DataTile key={tile.category} {...tile} />
           ))}
         </div>
-        <button className="bg-slate-800 rounded-full text-white py-2 w-full">
+        <button className="bg-[#303b59] rounded-full text-white py-2 w-full mt-4">
           Continue
         </button>
       </div>
