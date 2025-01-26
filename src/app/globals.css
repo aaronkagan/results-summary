@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.tiles-container > div:first-child {
+  background-color: #fef7f7;
+  color: red;
+}
+.tiles-container > div:nth-child(2) {
+  background-color: #fffaf4;
+  color: orange;
+}
+.tiles-container > div:nth-child(3) {
+  background-color: #f2fcf9;
+  color: #5fb39e;
+}
+.tiles-container > div:last-child {
+  background-color: #f4f4fe;
+  color: #3e45a0;
+}
+
 @media screen and (min-width: 768px) {
   body {
     background-color: #ecf2fe;
