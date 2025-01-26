@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="flex md:flex-row flex-col">
-      <div className="bg-gradient-to-t from-[#322dea] to-[#6843fe] flex flex-col items-center gap-5 md:rounded-3xl rounded-b-3xl">
+      <div className="bg-gradient-to-t from-[#322dea] to-[#6843fe] flex flex-col items-center gap-5 md:rounded-3xl rounded-b-3xl md:flex-1 justify-center">
         <p className="text-[#c5baff] font-semibold mt-5">Your Result</p>
         <div className="rounded-[50%] bg-gradient-to-t from-[#4734ee] to-[#4c24cd] aspect-square flex justify-center items-center flex-col p-6">
           <p className="text-white text-6xl font-bold">{score}</p>
@@ -29,14 +29,14 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="p-4 bg-[#fffffe]">
+      <div className="p-4 md:p-6 bg-[#fffffe] md:bg-white  md:rounded-r-3xl md:flex-1">
         <p className="mb-4 font-bold">Summary</p>
         <div className="flex flex-col gap-2">
           {data.map((tile) => (
             <DataTile key={tile.category} {...tile} color="#d58a8b" />
           ))}
         </div>
-        <button className="bg-[#303b59] rounded-full text-white py-2 w-full mt-4">
+        <button className="bg-[#303b59] rounded-full text-white py-2 w-full mt-6">
           Continue
         </button>
       </div>
