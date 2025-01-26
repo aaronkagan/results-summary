@@ -33,7 +33,7 @@ export default function Home() {
         <p className="mb-4 font-bold">Summary</p>
         <div className="flex flex-col gap-2">
           {data.map((tile) => (
-            <DataTile key={tile.category} {...tile} />
+            <DataTile key={tile.category} {...tile} color="#d58a8b" />
           ))}
         </div>
         <button className="bg-[#303b59] rounded-full text-white py-2 w-full mt-4">
